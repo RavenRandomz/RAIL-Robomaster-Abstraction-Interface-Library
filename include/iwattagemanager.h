@@ -22,14 +22,14 @@ namespace rail
 		virtual void allocate() = 0;
 
 		/// Get a list of all budgeters
-		virtual BudgeterList_t getBudgeters() const = 0;
+		virtual BudgeterVector_t getBudgeters() const = 0;
 		virtual void addBudgeter() = 0;
 
 		/// Add all budgeters
 		/**
 		 * If a budgeter is already on the list, it will be ignored
 		 */
-		virtual void addBudgeters(BudgeterList_t& budgeters) = 0;
+		virtual void addBudgeters(BudgeterVector_t& budgeters) = 0;
 
 		/// Set a budget
 		virtual void setBudget(double wattage) override = 0;
