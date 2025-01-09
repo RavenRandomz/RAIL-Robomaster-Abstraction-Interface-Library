@@ -2,10 +2,10 @@
 #define IWATTAGEMANAGER_H_SLKDFJKSLDFJEFMSEFSEF
 #include "iwattagebudgeter.h"
 
+#include "wattagealiases.h" 
+
 #include <vector>
 #include <memory>
-using BudgeterPointer_t = std::shared_ptr<rail::IWattageBudgeter>;
-using BudgeterList_t = std::vector<BudgeterPointer_t>;
 namespace rail
 {
 	/// Manages a collection of IWattageBudgeters
