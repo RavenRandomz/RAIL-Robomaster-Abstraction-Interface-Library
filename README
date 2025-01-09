@@ -1,0 +1,7 @@
+R.A.I.L.
+========
+
+This library provides interfaces, compound abstractions, as well as simulation
+classes for various robomaster parts.
+
+Made with make.
