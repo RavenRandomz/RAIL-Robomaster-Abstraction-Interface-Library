@@ -1,6 +1,6 @@
 #ifndef IWATTAGEMANAGER_H_SLKDFJKSLDFJEFMSEFSEF
 #define IWATTAGEMANAGER_H_SLKDFJKSLDFJEFMSEFSEF
-#include "iwattagebudgeter.h"
+#include "ibudgeter.h"
 
 #include "wattagealiases.h" 
 
@@ -11,7 +11,7 @@ namespace rail
 	/// Manages a collection of IWattageBudgeters
 	/**
 	*/
-	class IWattageManager: IWattageBudgeter
+	class IWattageManager: IBudgeter 
 	{
 	public:
 		/// Allocate current budget to budgeters

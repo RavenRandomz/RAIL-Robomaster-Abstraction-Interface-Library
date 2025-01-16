@@ -2,7 +2,7 @@
 #define IWATTAGE_BUDGETERLKASDFJNVJLKVWA
 namespace rail
 {
-	class IWattageBudgeter
+	class IBudgeter
 	{
 	public:
 		virtual void setBudget(double wattage) = 0;
