@@ -2,7 +2,7 @@
 #define IGENERALDCMOTOR_H_ASDLFJEFJLKXCV
 #include "itorquemotor.h"
 #include "ispeedmotor.h"
-#include "ibudgeter.h"
+#include "iwattbudgeter.h"
 
 namespace rail
 {

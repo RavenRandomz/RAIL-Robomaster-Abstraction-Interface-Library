@@ -1,6 +1,6 @@
 #ifndef WATTAGEALIASES_H_SLDKFASDFSEFX
 #define WATTAGEALIASES_H_SLDKFASDFSEFX
-#include "ibudgeter.h"
+#include "iwattbudgeter.h"
 
 #include <memory>
 #include <vector>

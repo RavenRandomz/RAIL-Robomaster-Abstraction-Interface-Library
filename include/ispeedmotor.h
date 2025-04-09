@@ -1,6 +1,6 @@
 #ifndef ISPEEDMOTOR_H_SDFLKJSFLKEJFZXCSEF
 #define ISPEEDMOTOR_H_SDFLKJSFLKEJFZXCSEF
-#include "ibudgeter.h"
+#include "iwattbudgeter.h"
 namespace rail
 {
 	class ISpeedMotor : IBudgeter

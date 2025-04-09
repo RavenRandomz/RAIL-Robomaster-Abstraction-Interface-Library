@@ -1,6 +1,6 @@
 #ifndef ITORQUEMOTOR_H_SDFLKJSFLKEJFZXCSEF
 #define ITORQUEMOTOR_H_SDFLKJSFLKEJFZXCSEF
-#include "ibudgeter.h"
+#include "iwattbudgeter.h"
 
 namespace rail
 {

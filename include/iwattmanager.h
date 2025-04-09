@@ -1,8 +1,8 @@
 #ifndef IWATTAGEMANAGER_H_SLKDFJKSLDFJEFMSEFSEF
 #define IWATTAGEMANAGER_H_SLKDFJKSLDFJEFMSEFSEF
-#include "ibudgeter.h"
+#include "iwattbudgeter.h"
 
-#include "wattagealiases.h" 
+#include "wattalises.h" 
 
 #include <vector>
 #include <memory>
