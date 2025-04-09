@@ -1,10 +1,10 @@
 #ifndef IPOSITIONMOTOR_H_SDFLKJSFLKEJFZXCSEF
 #define IPOSITIONMOTOR_H_SDFLKJSFLKEJFZXCSEF
-#include "ibudgeter.h"
+#include "iwattbudgeter.h"
 
 namespace rail
 {
-	class IPositionMotor : IBudgeter
+	class IPositionMotor : IWattBudgeter
 	{
 	public:
 		virtual void setBudget(double wattage) override = 0;

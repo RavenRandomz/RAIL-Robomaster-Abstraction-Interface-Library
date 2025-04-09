@@ -4,7 +4,7 @@
 
 namespace rail
 {
-	class ITorqueMotor : IBudgeter
+	class ITorqueMotor : IWattBudgeter
 	{
 	public:
 		virtual void setBudget(double wattage) override = 0;

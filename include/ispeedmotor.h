@@ -3,7 +3,7 @@
 #include "iwattbudgeter.h"
 namespace rail
 {
-	class ISpeedMotor : IBudgeter
+	class ISpeedMotor : IWattBudgeter
 	{
 	public:
 		virtual void setBudget(double wattage) override = 0;
