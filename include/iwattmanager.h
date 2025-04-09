@@ -11,7 +11,7 @@ namespace rail
 	/// Manages a collection of IWattageBudgeters
 	/**
 	*/
-	class IWattageManager: IBudgeter 
+	class IWattManager: IWattBudgeter 
 	{
 	public:
 		/// Allocate current budget to budgeters

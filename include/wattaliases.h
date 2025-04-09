@@ -6,7 +6,7 @@
 #include <vector>
 namespace rail
 {
-	using BudgeterPointer_t = std::shared_ptr<rail::IBudgeter>;
+	using BudgeterPointer_t = std::shared_ptr<rail::IWattBudgeter>;
 	using BudgeterVector_t = std::vector<BudgeterPointer_t>;
 }
 #endif
