@@ -1,11 +1,9 @@
 cmake_minimum_required(VERSION 3.20)
+set( CMAKE_EXPORT_COMPILE_COMMANDS ON )
 project(
 	RAIL
 	VERSION 3.2
 	LANGUAGES CXX)
-
-set( CMAKE_EXPORT_COMPILE_COMMANDS ON )
-
 include_directories(./include) 
 find_package(Catch2 3 REQUIRED)
 add_executable(tests)
