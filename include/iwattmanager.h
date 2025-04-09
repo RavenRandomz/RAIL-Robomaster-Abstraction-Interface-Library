@@ -2,7 +2,7 @@
 #define IWATTAGEMANAGER_H_SLKDFJKSLDFJEFMSEFSEF
 #include "iwattbudgeter.h"
 
-#include "wattalises.h" 
+#include "wattaliases.h" 
 
 #include <vector>
 #include <memory>
