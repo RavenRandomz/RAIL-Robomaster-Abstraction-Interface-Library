@@ -11,7 +11,8 @@ namespace rail
 	/// Manages a collection of IWattageBudgeters
 	/**
 	*/
-	class IWattManager:IWattBudgeter
+	template <typename WattData>
+	class IWattManager : public IWattBudgeter<WattData>
 	{
 	public:
 		/// Allocate current budget to budgeters
@@ -22,19 +23,19 @@ namespace rail
 		virtual void allocate() = 0;
 
 		/// Get a list of all budgeters
-		virtual BudgeterVector_t getBudgeters() const = 0;
+		virtual BudgeterVector<WattData> getBudgeters() const = 0;
 		virtual void addBudgeter() = 0;
 
 		/// Add all budgeters
 		/**
 		 * If a budgeter is already on the list, it will be ignored
 		 */
-		virtual void addBudgeters(BudgeterVector_t& budgeters) = 0;
+		virtual void addBudgeters(BudgeterVector<WattData>& budgeters) = 0;
 
 		/// Set a budget
-		virtual void setBudget(double wattage) override = 0;
+		virtual void setBudget(WattData wattage) override = 0;
 		/// Get the budget
-		virtual double getBudget() const override = 0;
+		virtual WattData getBudget() const override = 0;
 	};
 }
 #endif
