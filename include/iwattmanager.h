@@ -33,9 +33,9 @@ namespace rail
 		virtual void addBudgeters(BudgeterVector<WattData>& budgeters) = 0;
 
 		/// Set a budget
-		virtual void setBudget(WattData wattage) override = 0;
+		virtual void setBudget(const WattData& wattage) override = 0;
 		/// Get the budget
-		virtual WattData getBudget() const override = 0;
+		virtual const WattData& getBudget() const override = 0;
 	};
 }
 #endif
