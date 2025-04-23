@@ -4,18 +4,19 @@
 
 namespace rail
 {
-	class ITorqueMotor : IWattBudgeter
+	template <typename TorqueData, typename WattData>
+	class ITorqueMotor : IWattBudgeter<WattData>
 	{
 	public:
-		virtual void setBudget(double wattage) override = 0;
-		virtual double getBudget() const override = 0;
+		virtual void setBudget(WattData wattage) override = 0;
+		virtual WattData getBudget() const override = 0;
 
-		virtual void setTorque(double speed) = 0;
-		virtual double getTorque() const = 0;
-		virtual void setMaxTorque(double maxSpeed) = 0;
-		virtual double getMaxTorque() const = 0;
-		virtual void setMinTorque(double maxSpeed) = 0;
-		virtual double getMinTorque() const = 0;
+		virtual void setTorque(TorqueData speed) = 0;
+		virtual TorqueData getTorque() const = 0;
+		virtual void setMaxTorque(TorqueData maxSpeed) = 0;
+		virtual TorqueData getMaxTorque() const = 0;
+		virtual void setMinTorque(TorqueData maxSpeed) = 0;
+		virtual TorqueData getMinTorque() const = 0;
 	};
 }
 #endif
