@@ -7,15 +7,15 @@ namespace rail
 	class ISpeedMotor : public IWattBudgeter<WattData>
 	{
 	public:
-		virtual void setBudget(WattData wattage) override = 0;
-		virtual WattData getBudget() const override = 0;
+		virtual void setBudget(const WattData& wattage) override = 0;
+		virtual const WattData& getBudget() const override = 0;
 
-		virtual void setSpeed(SpeedData speed) = 0;
-		virtual SpeedData getSpeed() const = 0;
-		virtual void setMaxSpeed(SpeedData maxSpeed) = 0;
-		virtual SpeedData getMaxSpeed() const = 0;
-		virtual void setMinSpeed(SpeedData maxSpeed) = 0;
-		virtual SpeedData getMinSpeed() const = 0;
+		virtual void setSpeed(const SpeedData& speed) = 0;
+		virtual const SpeedData& getSpeed() const = 0;
+		virtual void setMaxSpeed(const SpeedData& maxSpeed) = 0;
+		virtual const SpeedData& getMaxSpeed() const = 0;
+		virtual void setMinSpeed(const SpeedData& maxSpeed) = 0;
+		virtual const SpeedData& getMinSpeed() const = 0;
 	};
 }
 #endif
