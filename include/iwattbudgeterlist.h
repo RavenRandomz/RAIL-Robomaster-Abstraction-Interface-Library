@@ -5,22 +5,23 @@
 
 namespace rail
 {
+	template <typename WattData>
 	class BudgeterList
 	{
 	private:
-		BudgeterVector_t m_budgeters {};
+		BudgeterVector<WattData> m_budgeters {};
 
 	public:
 		/// If a budgeter is already in the list it is ignored)
 		/**
 		 * This is determined by memory address.
 		 */
-		void addBudgeter(BudgeterPointer_t budgeter);
-		void removeBudgeter(BudgeterPointer_t budgeter);
+		void addBudgeter(BudgeterPointer<WattData> budgeter);
+		void removeBudgeter(BudgeterPointer<WattData> budgeter);
 
 		/// Return the number of budgeters
 		int getSize();
-		BudgeterVector_t getBudgeters();
+		BudgeterVector<WattData> getBudgeters();
 	};
 }
 #endif
