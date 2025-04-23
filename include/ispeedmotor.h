@@ -3,18 +3,19 @@
 #include "iwattbudgeter.h"
 namespace rail
 {
-	class ISpeedMotor : IWattBudgeter
+	template <typename SpeedData, typename WattData>
+	class ISpeedMotor : public IWattBudgeter<WattData>
 	{
 	public:
-		virtual void setBudget(double wattage) override = 0;
-		virtual double getBudget() const override = 0;
+		virtual void setBudget(WattData wattage) override = 0;
+		virtual WattData getBudget() const override = 0;
 
-		virtual void setSpeed(double speed) = 0;
-		virtual double getSpeed() const = 0;
-		virtual void setMaxSpeed(double maxSpeed) = 0;
-		virtual double getMaxSpeed() const = 0;
-		virtual void setMinSpeed(double maxSpeed) = 0;
-		virtual double getMinSpeed() const = 0;
+		virtual void setSpeed(SpeedData speed) = 0;
+		virtual SpeedData getSpeed() const = 0;
+		virtual void setMaxSpeed(SpeedData maxSpeed) = 0;
+		virtual SpeedData getMaxSpeed() const = 0;
+		virtual void setMinSpeed(SpeedData maxSpeed) = 0;
+		virtual SpeedData getMinSpeed() const = 0;
 	};
 }
 #endif
