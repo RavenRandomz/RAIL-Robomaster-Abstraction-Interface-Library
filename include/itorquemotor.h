@@ -8,8 +8,8 @@ namespace rail
 	class ITorqueMotor : IWattBudgeter<WattData>
 	{
 	public:
-		virtual void setBudget(const WattData& wattage) override = 0;
-		virtual const WattData& getBudget() const override = 0;
+		virtual void setWattBudget(const WattData& wattage) override = 0;
+		virtual const WattData& getWattBudget() const override = 0;
 
 		virtual void setTorque(const TorqueData& speed) = 0;
 		virtual const TorqueData& getTorque() const = 0;

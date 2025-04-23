@@ -10,8 +10,8 @@ namespace rail
 	class IDCMotor : public ITorqueMotor<TorqueData, WattData>, public ISpeedMotor<SpeedData, WattData>
 	{
 
-		virtual void setBudget(const WattData& wattage) override = 0;
-		virtual const WattData& getBudget() const override = 0;
+		virtual void setWattBudget(const WattData& wattage) override = 0;
+		virtual const WattData& getWattBudget() const override = 0;
 
 		virtual void setSpeed(const SpeedData& speed) override = 0;
 		virtual const SpeedData& getSpeed() const override = 0;
