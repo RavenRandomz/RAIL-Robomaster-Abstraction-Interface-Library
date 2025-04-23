@@ -6,8 +6,8 @@ namespace rail
 	class IWattBudgeter
 	{
 	public:
-		virtual void setBudget(WattData wattage) = 0;
-		virtual WattData getBudget() const = 0;
+		virtual void setWattBudget(const WattData& wattage) = 0;
+		virtual const WattData& getWattBudget() const = 0;
 	};
 }
 #endif
