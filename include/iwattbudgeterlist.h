@@ -21,7 +21,7 @@ namespace rail
 
 		/// Return the number of budgeters
 		int getSize();
-		BudgeterVector<WattData> getBudgeters();
+		BudgeterVector<WattData>& getBudgeters();
 	};
 }
 #endif
