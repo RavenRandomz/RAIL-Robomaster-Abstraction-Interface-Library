@@ -23,7 +23,7 @@ namespace rail
 		virtual void allocate() = 0;
 
 		/// Get a list of all budgeters
-		virtual BudgeterVector<WattData> getBudgeters() const = 0;
+		virtual BudgeterVector<WattData>& getBudgeters() const = 0;
 		virtual void addBudgeter() = 0;
 
 		/// Add all budgeters
