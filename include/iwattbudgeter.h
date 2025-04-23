@@ -2,12 +2,12 @@
 #define IWATTAGE_BUDGETERLKASDFJNVJLKVWA
 namespace rail
 {
-	template <typename T>
+	template <typename WattData>
 	class IWattBudgeter
 	{
 	public:
-		virtual void setBudget(T wattage) = 0;
-		virtual T getBudget() const = 0;
+		virtual void setBudget(WattData wattage) = 0;
+		virtual WattData getBudget() const = 0;
 	};
 }
 #endif
