@@ -12,7 +12,7 @@ namespace rail
 	/**
 	*/
 	template <typename WattData>
-	class IWattManager : public IWattBudgeter<WattData>
+	class IWattManager : virtual public IWattBudgeter<WattData>
 	{
 	public:
 		/// Allocate current budget to budgeters

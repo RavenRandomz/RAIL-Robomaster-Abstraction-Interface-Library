@@ -7,7 +7,7 @@
 namespace rail
 {
 	template <typename SpeedData, typename TorqueData, typename WattData>
-	class IDCMotor : public ITorqueMotor<TorqueData, WattData>, public ISpeedMotor<SpeedData, WattData>
+	class IDCMotor : virtual public ITorqueMotor<TorqueData, WattData>, virtual public ISpeedMotor<SpeedData, WattData>
 	{
 
 		virtual void setWattBudget(const WattData& wattage) override = 0;
