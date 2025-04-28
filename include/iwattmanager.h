@@ -4,8 +4,6 @@
 
 #include "wattaliases.h" 
 
-#include <vector>
-#include <memory>
 namespace rail
 {
 	/// Manages a collection of IWattageBudgeters

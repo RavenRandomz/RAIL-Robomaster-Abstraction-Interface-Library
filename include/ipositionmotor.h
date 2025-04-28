@@ -1,16 +1,11 @@
 #ifndef IPOSITIONMOTOR_H_SDFLKJSFLKEJFZXCSEF
 #define IPOSITIONMOTOR_H_SDFLKJSFLKEJFZXCSEF
-#include "iwattbudgeter.h"
-
 namespace rail
 {
-	template <typename PositionData, typename WattData>
-	class IPositionMotor : virtual public IWattBudgeter<WattData>
+	template <typename PositionData>
+	class IPositionMotor 
 	{
 	public:
-		virtual void setWattBudget(const WattData& wattage) override = 0;
-		virtual WattData getWattBudget() const override = 0;
-
 		virtual void setPosition(const PositionData& speed) = 0;
 		virtual PositionData getPosition() const = 0;
 
