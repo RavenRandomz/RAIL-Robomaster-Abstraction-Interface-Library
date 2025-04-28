@@ -14,20 +14,20 @@ namespace rail
 		virtual WattData getWattBudget() const override = 0;
 
 		virtual void setSpeed(const SpeedData& speed) override = 0;
-		virtual const SpeedData& getSpeed() const override = 0;
+		virtual SpeedData getSpeed() const override = 0;
 
 		virtual void setMaxSpeed(const SpeedData& maxSpeed) override = 0;
-		virtual const SpeedData& getMaxSpeed() const override = 0;
+		virtual SpeedData getMaxSpeed() const override = 0;
 		virtual void setMinSpeed(const SpeedData& minSpeed) override = 0;
-		virtual const SpeedData& getMinSpeed() const override = 0;
+		virtual SpeedData getMinSpeed() const override = 0;
 
 		virtual void setTorque(const TorqueData& torque) override = 0;
-		virtual const TorqueData& getTorque() const override = 0;
+		virtual TorqueData getTorque() const override = 0;
 
 		virtual void setMaxTorque(const TorqueData& maxTorque) override = 0;
-		virtual const TorqueData& getMaxTorque() const override = 0;
+		virtual TorqueData getMaxTorque() const override = 0;
 		virtual void setMinTorque(const TorqueData& minTorque) override = 0;
-		virtual const TorqueData& getMinTorque() const override = 0;
+		virtual TorqueData getMinTorque() const override = 0;
 
 	};
 }
