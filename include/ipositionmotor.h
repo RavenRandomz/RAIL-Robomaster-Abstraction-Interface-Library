@@ -9,7 +9,7 @@ namespace rail
 	{
 	public:
 		virtual void setWattBudget(const WattData& wattage) override = 0;
-		virtual const WattData& getWattBudget() const override = 0;
+		virtual WattData getWattBudget() const override = 0;
 
 		virtual void setPosition(const PositionData& speed) = 0;
 		virtual const PositionData& getPosition() const = 0;
