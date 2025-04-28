@@ -5,7 +5,7 @@
 namespace rail
 {
 	template <typename PositionData, typename WattData>
-	class IBoxServo : public IPositionMotor<PositionData, WattData>, public IWattBudgeter<WattData>
+	class IBoxServo : virtual public IPositionMotor<PositionData>, virtual public IWattBudgeter<WattData>
 	{
 	public:
 		virtual void setWattBudget(const WattData& wattage) override = 0;
