@@ -27,13 +27,13 @@ namespace rail
 		virtual double getMinTorque() const override;
 
 		private:
-		double wattBudget{0};
-		double speed{0};
-		double minSpeed{0};
-		double maxSpeed{0};
-		double torque{0};
-		double maxTorque{0};
-		double minTorque{0};
+		double m_wattBudget{0};
+		double m_speed{0};
+		double m_minSpeed{0};
+		double m_maxSpeed{0};
+		double m_torque{0};
+		double m_maxTorque{0};
+		double m_minTorque{0};
 	};
 }
 #endif
