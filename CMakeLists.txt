@@ -7,6 +7,7 @@ project(
 add_library(rmul-rail INTERFACE)
 
 include(GNUInstallDirs)
+include_directories(${PROJECT_SOURCE_DIR}/include)
 install(DIRECTORY include/
         DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/rmul-rail)
 
@@ -27,6 +28,7 @@ enable_testing()
 
 add_executable(
   hello_test
+  include/
   ./test/test.cpp
 )
 target_link_libraries(
