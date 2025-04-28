@@ -35,7 +35,7 @@ namespace rail
 		/// Set a budget
 		virtual void setWattBudget(const WattData& wattage) override = 0;
 		/// Get the budget
-		virtual const WattData& getWattBudget() const override = 0;
+		virtual const WattData getWattBudget() const override = 0;
 	};
 }
 #endif
