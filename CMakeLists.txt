@@ -29,7 +29,7 @@ enable_testing()
 add_executable(
   hello_test
   include/
-  ./test/test.cpp
+  test/
 )
 target_link_libraries(
   hello_test
