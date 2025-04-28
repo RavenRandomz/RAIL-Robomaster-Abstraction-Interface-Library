@@ -12,11 +12,12 @@ namespace rail
 		virtual WattData getWattBudget() const override = 0;
 
 		virtual void setTorque(const TorqueData& torque) = 0;
-		virtual const TorqueData& getTorque() const = 0;
+		virtual TorqueData getTorque() const = 0;
+
 		virtual void setMaxTorque(const TorqueData& maxTorque) = 0;
-		virtual const TorqueData& getMaxTorque() const = 0;
+		virtual TorqueData getMaxTorque() const = 0;
 		virtual void setMinTorque(const TorqueData& minTorque) = 0;
-		virtual const TorqueData& getMinTorque() const = 0;
+		virtual TorqueData getMinTorque() const = 0;
 	};
 }
 #endif
