@@ -7,7 +7,7 @@ namespace rail
 	{
 	public:
 		virtual void setWattBudget(const WattData& wattage) = 0;
-		virtual const WattData& getWattBudget() const = 0;
+		virtual WattData getWattBudget() const = 0;
 	};
 }
 #endif
