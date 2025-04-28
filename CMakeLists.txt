@@ -28,14 +28,15 @@ enable_testing()
 
 add_executable(
   hello_test
-  include/
-  test/
+  test/dcmotortest.cpp
+  test/dcmotormockup.cpp
+  test/dcmotormockup.h
 )
 target_link_libraries(
   hello_test
   GTest::gtest_main
 )
 
-include(GoogleTest)
+include(GoogleTest test)
 gtest_discover_tests(hello_test)
 
