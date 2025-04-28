@@ -3,11 +3,15 @@
 #include "itorquemotor.h"
 #include "ispeedmotor.h"
 #include "iwattbudgeter.h"
+#include "ireversiblemotor.h"
 
 namespace rail
 {
 	template <typename SpeedData, typename TorqueData, typename WattData>
-	class IDCMotor : virtual public ITorqueMotor<TorqueData>, virtual public ISpeedMotor<SpeedData>, virtual public IWattBudgeter<WattData>
+	class IDCMotor : virtual public ITorqueMotor<TorqueData>,
+					 virtual public ISpeedMotor<SpeedData>,
+					 virtual public IWattBudgeter<WattData>,
+					 virtual public IReversibleMotor
 	{
 
 		virtual void setWattBudget(const WattData& wattage) override = 0;
@@ -28,6 +32,9 @@ namespace rail
 		virtual TorqueData getMaxTorque() const override = 0;
 		virtual void setMinTorque(const TorqueData& minTorque) override = 0;
 		virtual TorqueData getMinTorque() const override = 0;
+
+		virtual void setReversed(bool reverse) override = 0;
+		virtual bool getReversed() const override = 0;
 
 	};
 }
