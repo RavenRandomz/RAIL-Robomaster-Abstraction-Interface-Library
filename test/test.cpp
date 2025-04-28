@@ -1,6 +1,6 @@
-#include <catch2/catch_test_macros.hpp>
+#include "gtest/gtest.h"
 
-TEST_CASE("Mathematical Sanity Check", "[reality-check]")
+TEST(MathematicalSanityCheck, Basic)
 {
-	REQUIRE(1 + 1 == 0);
+	EXPECT_EQ(1 + 1, 2);
 }
