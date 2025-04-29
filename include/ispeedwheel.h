@@ -30,7 +30,7 @@ namespace rail
 		virtual void setMinSpeed(const SpeedData& minSpeed) override = 0;
 		virtual SpeedData getMinSpeed() const override = 0;
 
-		virtual ~ISpeedWheel();
+		virtual ~ISpeedWheel() = default;
 	};
 }
 #endif

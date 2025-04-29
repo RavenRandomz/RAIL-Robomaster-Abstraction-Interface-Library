@@ -15,7 +15,7 @@ namespace rail
 		virtual void setMinSpeed(const SpeedData& minSpeed) = 0;
 		virtual SpeedData getMinSpeed() const = 0;
 
-		virtual ~ISpeedMotor();
+		virtual ~ISpeedMotor() = default;
 	};
 }
 #endif

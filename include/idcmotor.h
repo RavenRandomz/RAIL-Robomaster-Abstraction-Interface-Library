@@ -43,7 +43,7 @@ namespace rail
 		virtual void resetWattOverbudgetStatus() override = 0;
 		virtual WattData getWattOverbudgetAmount() const override= 0;
 
-		virtual ~IDCMotor();
+		virtual ~IDCMotor() = default;
 	};
 }
 #endif
