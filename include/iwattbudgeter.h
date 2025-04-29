@@ -22,7 +22,7 @@ namespace rail
 		virtual void resetWattOverbudgetStatus() = 0;
 		virtual WattData getWattOverbudgetAmount() const = 0;
 
-		virtual ~IWattBudgeter();
+		virtual ~IWattBudgeter() = default;
 	};
 }
 #endif
