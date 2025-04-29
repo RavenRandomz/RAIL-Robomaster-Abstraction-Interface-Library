@@ -14,6 +14,7 @@ namespace rail
 		virtual void setRadius(const RadiusData& radius) = 0;
 		virtual RadiusData& getRadius() = 0;
 
+		virtual ~ISpeedWheel();
 	};
 }
 #endif
