@@ -19,6 +19,8 @@ namespace rail
 
 		virtual void setMinPosition(const PositionData& Minposition) = 0;
 		virtual PositionData getMinPosition() const = 0;
+
+		virtual ~IBoxServo();
 	};
 }
 

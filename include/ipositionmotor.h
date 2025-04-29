@@ -14,6 +14,8 @@ namespace rail
 
 		virtual void setMinPosition(const PositionData& minPosition) = 0;
 		virtual PositionData getMinPosition() const = 0;
+
+		virtual ~IPositionMotor();
 	};
 }
 #endif
