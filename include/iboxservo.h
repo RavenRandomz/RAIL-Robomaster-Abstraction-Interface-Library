@@ -20,6 +20,12 @@ namespace rail
 		virtual void setMinPosition(const PositionData& Minposition) = 0;
 		virtual PositionData getMinPosition() const = 0;
 
+
+		virtual void setWattEstimateMode(bool mode) override = 0;
+		virtual bool getOverbudgetStatus() const override = 0;
+		virtual void resetOverbudgetStatus() override = 0;
+		virtual WattData getOverBudgetAmount() const override= 0;
+
 		virtual ~IBoxServo();
 	};
 }
