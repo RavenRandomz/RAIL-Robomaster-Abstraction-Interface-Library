@@ -13,10 +13,6 @@ namespace rail
 					 virtual public IWattBudgeter<WattData>,
 					 virtual public IReversibleMotor
 	{
-
-		virtual void setWattBudget(const WattData& wattage) override = 0;
-		virtual WattData getWattBudget() const override = 0;
-
 		virtual void setSpeed(const SpeedData& speed) override = 0;
 		virtual SpeedData getSpeed() const override = 0;
 
@@ -35,6 +31,15 @@ namespace rail
 
 		virtual void setReversed(bool reverse) override = 0;
 		virtual bool getReversed() const override = 0;
+
+
+		virtual void setWattBudget(const WattData& wattage) override = 0;
+		virtual WattData getWattBudget() const override = 0;
+
+		virtual void setWattEstimateMode(bool mode) = 0;
+		virtual bool getOverbudgetStatus() const override = 0;
+		virtual void resetOverbudgetStatus() override = 0;
+		virtual WattData getOverBudgetAmount() const override= 0;
 
 		virtual ~IDCMotor();
 	};
