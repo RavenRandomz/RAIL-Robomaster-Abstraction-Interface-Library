@@ -71,4 +71,32 @@ namespace rail
 	{
 		return m_minTorque;
 	}
+
+
+	void DCMotorMockup::setReversed(bool reverse)
+	{
+		m_reversed = reverse;
+	}
+
+	bool DCMotorMockup::getReversed() const 
+	{
+		return m_reversed; 
+	}
+
+	void DCMotorMockup::setWattEstimateMode(bool mode)
+	{
+		
+	}
+
+	bool DCMotorMockup::getWattOverbudgetStatus() const 
+	{
+		return false;
+	}
+	void DCMotorMockup::resetWattOverbudgetStatus()
+	{
+	}
+	double DCMotorMockup::getWattOverbudgetAmount() const
+	{
+		return 10.0;
+	}
 }
