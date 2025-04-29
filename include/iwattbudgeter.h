@@ -18,6 +18,7 @@ namespace rail
 		 * The user has the option to not utilize EstimateMode for higher risk.
 		 */
 		virtual void setWattEstimateMode(bool mode) = 0;
+		virtual bool estimateModeAllowed() const = 0;
 		virtual bool getWattOverbudgetStatus() const = 0;
 		virtual void resetWattOverbudgetStatus() = 0;
 		virtual WattData getWattOverbudgetAmount() const = 0;
