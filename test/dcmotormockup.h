@@ -33,7 +33,7 @@ namespace rail
 		virtual bool getWattOverbudgetStatus() const override;
 		virtual void resetWattOverbudgetStatus() override;
 		virtual double getWattOverbudgetAmount() const override;
-
+		virtual bool estimateModeAllowed() const override {return false;}
 
 
 		private:
