@@ -15,7 +15,7 @@ namespace rail
 		virtual void setMinTorque(const TorqueData& minTorque) = 0;
 		virtual TorqueData getMinTorque() const = 0;
 
-		virtual ~ITorqueMotor();
+		virtual ~ITorqueMotor() = default;
 	};
 }
 #endif

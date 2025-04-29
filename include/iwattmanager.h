@@ -34,7 +34,13 @@ namespace rail
 		virtual void setWattBudget(const WattData& wattage) override = 0;
 		/// Get the budget
 		virtual const WattData getWattBudget() const override = 0;
-		virtual ~IWattManager();
+
+		virtual void setWattEstimateMode(bool mode) override = 0;
+		virtual bool getWattOverbudgetStatus() const override = 0;
+		virtual void resetWattOverbudgetStatus() override = 0;
+		virtual WattData getWattOverBudgetAmount() const override= 0;
+
+		virtual ~IWattManager() = default;
 	};
 }
 #endif

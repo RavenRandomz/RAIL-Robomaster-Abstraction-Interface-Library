@@ -7,9 +7,6 @@ namespace rail
 	class DCMotorMockup : virtual public IDCMotor<double, double, double>
 	{
 		public:
-		virtual void setWattBudget(const double& wattage) override;
-		virtual double getWattBudget() const override;
-
 		virtual void setSpeed(const double& speed) override;
 		virtual double getSpeed() const override;
 
@@ -26,6 +23,19 @@ namespace rail
 		virtual void setMinTorque(const double& minTorque) override;
 		virtual double getMinTorque() const override;
 
+		virtual void setWattBudget(const double& wattage) override;
+		virtual double getWattBudget() const override;
+
+		virtual void setReversed(bool reverse) override;
+		virtual bool getReversed() const override;
+
+		virtual void setWattEstimateMode(bool mode) override;
+		virtual bool getWattOverbudgetStatus() const override;
+		virtual void resetWattOverbudgetStatus() override;
+		virtual double getWattOverbudgetAmount() const override;
+
+
+
 		private:
 		double m_wattBudget{0};
 		double m_speed{0};
@@ -34,6 +44,7 @@ namespace rail
 		double m_torque{0};
 		double m_maxTorque{0};
 		double m_minTorque{0};
+		bool m_reversed{false};
 	};
 }
 #endif
