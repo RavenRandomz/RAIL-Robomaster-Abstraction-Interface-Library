@@ -38,9 +38,9 @@ namespace rail
 		virtual WattData getWattBudget() const override = 0;
 
 		virtual void setWattEstimateMode(bool mode) override = 0;
-		virtual bool getOverbudgetStatus() const override = 0;
-		virtual void resetOverbudgetStatus() override = 0;
-		virtual WattData getOverBudgetAmount() const override= 0;
+		virtual bool getWattOverbudgetStatus() const override = 0;
+		virtual void resetWattOverbudgetStatus() override = 0;
+		virtual WattData getWattOverbudgetAmount() const override= 0;
 
 		virtual ~IDCMotor();
 	};
