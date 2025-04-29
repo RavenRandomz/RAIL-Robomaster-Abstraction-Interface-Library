@@ -13,6 +13,7 @@ namespace rail
 					 virtual public IWattBudgeter<WattData>,
 					 virtual public IReversibleMotor
 	{
+		public:
 		virtual void setSpeed(const SpeedData& speed) override = 0;
 		virtual SpeedData getSpeed() const override = 0;
 
