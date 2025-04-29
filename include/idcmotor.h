@@ -39,6 +39,7 @@ namespace rail
 
 		//The getters here have hardcoded responses :D
 		virtual void setWattEstimateMode(bool mode) override = 0;
+		virtual bool estimateModeAllowed() const override = 0;
 		virtual bool getWattOverbudgetStatus() const override = 0;
 		virtual void resetWattOverbudgetStatus() override = 0;
 		virtual WattData getWattOverbudgetAmount() const override= 0;
