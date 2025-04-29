@@ -35,7 +35,7 @@ namespace rail
 		/// Get the budget
 		virtual const WattData getWattBudget() const override = 0;
 
-		virtual void setWattEstimateMode(bool mode) = 0;
+		virtual void setWattEstimateMode(bool mode) override = 0;
 		virtual bool getOverbudgetStatus() const override = 0;
 		virtual void resetOverbudgetStatus() override = 0;
 		virtual WattData getOverBudgetAmount() const override= 0;

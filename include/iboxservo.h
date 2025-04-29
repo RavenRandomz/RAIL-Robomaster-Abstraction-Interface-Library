@@ -11,14 +11,14 @@ namespace rail
 		virtual void setWattBudget(const WattData& wattage) override = 0;
 		virtual WattData getWattBudget() const override = 0;
 
-		virtual void setPosition(const PositionData& position) = 0;
-		virtual PositionData getPosition() const = 0;
+		virtual void setPosition(const PositionData& position) override = 0;
+		virtual PositionData getPosition() const override = 0;
 
-		virtual void setMaxPosition(const PositionData& Maxposition) = 0;
-		virtual PositionData getMaxPosition() const = 0;
+		virtual void setMaxPosition(const PositionData& Maxposition) override = 0;
+		virtual PositionData getMaxPosition() const override = 0;
 
-		virtual void setMinPosition(const PositionData& Minposition) = 0;
-		virtual PositionData getMinPosition() const = 0;
+		virtual void setMinPosition(const PositionData& Minposition) override = 0;
+		virtual PositionData getMinPosition() const override = 0;
 
 
 		virtual void setWattEstimateMode(bool mode) override = 0;
