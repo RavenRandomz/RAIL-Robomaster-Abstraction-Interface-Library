@@ -36,6 +36,7 @@ namespace rail
 		virtual void setReversed(bool reverse) override = 0;
 		virtual bool getReversed() const override = 0;
 
+		virtual ~IDCMotor();
 	};
 }
 #endif

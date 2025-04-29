@@ -10,6 +10,8 @@ namespace rail
 	public:
 		virtual void setReversed(bool reverse) = 0;
 		virtual bool getReversed() const = 0;
+
+		virtual ~IReversibleMotor();
 	};
 }
 #endif
