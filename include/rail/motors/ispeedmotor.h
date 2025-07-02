@@ -6,8 +6,8 @@ namespace rail
 	class ISpeedMotor
 	{
 	public:
-		virtual void setSpeed(const SpeedData& speed) = 0;
-		virtual SpeedData getSpeed() const = 0;
+		virtual void setTargetSpeed(const SpeedData& speed) = 0;
+		virtual SpeedData getTargetSpeed() const = 0;
 
 		virtual ~ISpeedMotor() = default;
 	};
