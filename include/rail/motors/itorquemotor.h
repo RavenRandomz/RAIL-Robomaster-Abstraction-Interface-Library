@@ -6,8 +6,8 @@ namespace rail
 	class ITorqueMotor
 	{
 	public:
-		virtual void setTorque(const TorqueData& torque) = 0;
-		virtual TorqueData getTorque() const = 0;
+		virtual void setTargetTorque(const TorqueData& torque) = 0;
+		virtual TorqueData getTargetTorque() const = 0;
 
 		virtual ~ITorqueMotor() = default;
 	};
