@@ -6,8 +6,8 @@ namespace rail
 	class IPositionMotor 
 	{
 	public:
-		virtual void setPosition(const PositionData& speed) = 0;
-		virtual PositionData getPosition() const = 0;
+		virtual void setTargetPosition(const PositionData& speed) = 0;
+		virtual PositionData getTargetPosition() const = 0;
 
 		virtual ~IPositionMotor() = default;
 	};
