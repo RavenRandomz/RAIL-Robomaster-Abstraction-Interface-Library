@@ -5,6 +5,10 @@
 namespace rail::control::chassis
 {
     template<class SpeedData>
+    /**
+     * Provides a uniform means of controlling 4 motors in a quad orientation.
+     * This is particularly useful for the 3 main holonomic drives: omni, mecnaum, and swerve
+     */
     class IQuadDrive
     {
         using WheelSpeeds = QuadDriveData<SpeedData>;
