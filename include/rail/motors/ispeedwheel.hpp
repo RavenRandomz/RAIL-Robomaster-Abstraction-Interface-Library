@@ -1,6 +1,6 @@
 #ifndef ISPEEDWHEEL_H_SDFKLSEJFLSDJF
 #define ISPEEDWHEEL_H_SDFKLSEJFLSDJF
-#include "ispeedmotor.h"
+#include "ispeedmotor.hpp"
 
 namespace rail
 {
