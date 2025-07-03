@@ -1,6 +1,6 @@
 #ifndef RAIL_MOTORS_I_SPEED_WHEEL_H
 #define RAIL_MOTORS_I_SPEED_WHEEL_H
-#include "ispeedmotor.hpp"
+#include "ispeed_motor.hpp"
 
 namespace rail::motors
 {
