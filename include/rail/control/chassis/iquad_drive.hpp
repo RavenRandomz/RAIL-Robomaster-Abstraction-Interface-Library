@@ -9,8 +9,8 @@ namespace rail::chassis
     {
         using WheelSpeeds = QuadDriveData<SpeedData>;
 
-        virtual void setWheelSpeeds(const WheelSpeeds& wheelSpeeds) = 0;
-        virtual WheelSpeeds getWheelSpeeds() const = 0;
+        virtual void setTargetWheelSpeeds(const WheelSpeeds& wheelSpeeds) = 0;
+        virtual WheelSpeeds getTargetWheelSpeeds() const = 0;
     };
 }
 #endif
