@@ -1,5 +1,5 @@
-#ifndef RAIL_CHASSIS_I_QUAD_DRIVE_H
-#define RAIL_CHASSIS_I_QUAD_DRIVE_H
+#ifndef RAIL_CONTROL_CHASSIS_I_QUAD_DRIVE_HPP
+#define RAIL_CONTROL_CHASSIS_I_QUAD_DRIVE_HPP
 #include "quad_drive_data.hpp"
 
 namespace rail::control::chassis
