@@ -1,7 +1,7 @@
-#ifndef RAIL_CHASSIS_QUAD_DRIVE_DATA_H
-#define RAIL_CHASSIS_QUAD_DRIVE_DATA_H
+#ifndef RAIL_CONTROL_CHASSIS_QUAD_DRIVE_DATA_HPP
+#define RAIL_CONTROL_CHASSIS_QUAD_DRIVE_DATA_HPP
 
-namespace rail::chassis
+namespace rail::control::chassis
 {
 	/**
 	 *	Provides a means of bundling information such as speed, temperature, and whatnot
