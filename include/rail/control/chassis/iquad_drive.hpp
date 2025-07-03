@@ -2,7 +2,7 @@
 #define RAIL_CHASSIS_I_QUAD_DRIVE_H
 #include "quad_drive_data.hpp"
 
-namespace rail::chassis
+namespace rail::control::chassis
 {
     template<class SpeedData>
     class IQuadDrive

@@ -1,6 +1,6 @@
 #ifndef RAIL_CHASSIS_HOLONOMIC_DRIVE_HPP
 #define RAIL_CHASSIS_HOLONOMIC_DRIVE_HPP
-namespace rail::chassis
+namespace rail::control::chassis
 {
     /**
      * A Holonomic Drive is essentially any 2d drive that can translate
