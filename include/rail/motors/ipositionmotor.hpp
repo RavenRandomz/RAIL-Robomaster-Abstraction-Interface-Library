@@ -1,6 +1,6 @@
 #ifndef IPOSITIONMOTOR_H_SDFLKJSFLKEJFZXCSEF
 #define IPOSITIONMOTOR_H_SDFLKJSFLKEJFZXCSEF
-namespace rail
+namespace rail::motors
 {
 	template <typename PositionData>
 	class IPositionMotor 

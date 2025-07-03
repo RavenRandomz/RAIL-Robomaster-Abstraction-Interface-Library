@@ -2,7 +2,7 @@
 #define ISPEEDWHEEL_H_SDFKLSEJFLSDJF
 #include "ispeedmotor.hpp"
 
-namespace rail
+namespace rail::motors
 {
 	template <typename SpeedData, typename AngularSpeedData>
 	class ISpeedWheel : virtual public ISpeedMotor<AngularSpeedData>

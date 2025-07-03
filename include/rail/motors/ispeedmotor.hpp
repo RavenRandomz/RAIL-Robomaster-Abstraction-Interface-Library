@@ -1,6 +1,6 @@
 #ifndef ISPEEDMOTOR_H_SDFLKJSFLKEJFZXCSEF
 #define ISPEEDMOTOR_H_SDFLKJSFLKEJFZXCSEF
-namespace rail
+namespace rail::motors
 {
 	template <typename SpeedData>
 	class ISpeedMotor
