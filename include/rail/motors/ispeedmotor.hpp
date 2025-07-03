@@ -1,5 +1,5 @@
-#ifndef ISPEEDMOTOR_H_SDFLKJSFLKEJFZXCSEF
-#define ISPEEDMOTOR_H_SDFLKJSFLKEJFZXCSEF
+#ifndef RAIL_MOTORS_I_SPEED_MOTOR_H
+#define RAIL_MOTORS_I_SPEED_MOTOR_H
 namespace rail::motors
 {
 	template <typename SpeedData>

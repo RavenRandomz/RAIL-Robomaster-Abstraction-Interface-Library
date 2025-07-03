@@ -1,5 +1,5 @@
-#ifndef ISPEEDWHEEL_H_SDFKLSEJFLSDJF
-#define ISPEEDWHEEL_H_SDFKLSEJFLSDJF
+#ifndef RAIL_MOTORS_I_SPEED_WHEEL_H
+#define RAIL_MOTORS_I_SPEED_WHEEL_H
 #include "ispeedmotor.hpp"
 
 namespace rail::motors

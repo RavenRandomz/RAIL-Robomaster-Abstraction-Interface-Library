@@ -1,5 +1,5 @@
-#ifndef ITORQUEMOTOR_H_SDFLKJSFLKEJFZXCSEF
-#define ITORQUEMOTOR_H_SDFLKJSFLKEJFZXCSEF
+#ifndef RAIL_MOTORS_I_TORQUE_MOTOR_H
+#define RAIL_MOTORS_I_TORQUE_MOTOR_H
 namespace rail::motors
 {
 	template <typename TorqueData>

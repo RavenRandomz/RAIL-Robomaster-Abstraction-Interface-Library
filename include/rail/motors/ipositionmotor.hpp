@@ -1,5 +1,5 @@
-#ifndef IPOSITIONMOTOR_H_SDFLKJSFLKEJFZXCSEF
-#define IPOSITIONMOTOR_H_SDFLKJSFLKEJFZXCSEF
+#ifndef RAIL_MOTORS_I_POSITION_MOTOR_H
+#define RAIL_MOTORS_I_POSITION_MOTOR_H
 namespace rail::motors
 {
 	template <typename PositionData>
