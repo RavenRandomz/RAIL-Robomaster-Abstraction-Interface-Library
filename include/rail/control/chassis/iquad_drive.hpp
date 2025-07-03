@@ -5,7 +5,7 @@
 namespace rail::chassis
 {
     template<class SpeedData>
-    class QuadDrive
+    class IQuadDrive
     {
         using WheelSpeeds = QuadDriveData<SpeedData>;
 
