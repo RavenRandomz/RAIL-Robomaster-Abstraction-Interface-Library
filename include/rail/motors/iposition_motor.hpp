@@ -1,14 +1,20 @@
 #ifndef RAIL_MOTORS_I_POSITION_MOTOR_H
 #define RAIL_MOTORS_I_POSITION_MOTOR_H
+#include "iposition_control.hpp"
 namespace rail::motors
 {
+	/**
+	 * Interface for a general motor that can be controlled via a target position.
+	 * This is for dependency injection in using a position motor instance i.e. the
+	 * client will be responsible for calling update() and initialize().
+	 * 
+	 * For non-owning users who are not expected to call update() reguarily, please
+	 * use motors::IPositionControl.
+	 */
 	template <typename PositionData>
-	class IPositionMotor 
+	class IPositionMotor : virtual public IPositionControl<PositionData>
 	{
 	public:
-		virtual void setTargetPosition(const PositionData& speed) = 0;
-		virtual PositionData getTargetPosition() const = 0;
-
 		virtual ~IPositionMotor() = default;
 	};
 }
