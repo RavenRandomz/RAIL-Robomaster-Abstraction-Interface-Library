@@ -12,8 +12,6 @@ namespace rail::motors
 	public:
 		virtual void setTargetPosition(const PositionData& speed) = 0;
 		virtual PositionData getTargetPosition() const = 0;
-
-		virtual ~IPositionControl() = default;
 	};
 }
 #endif
