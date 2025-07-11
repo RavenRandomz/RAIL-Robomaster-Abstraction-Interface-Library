@@ -17,6 +17,8 @@ namespace rail::systems
     {
         virtual void initialize() = 0;
         virtual void update() = 0;
+
+        virtual ~ISystem() = default;
     };
 }
 #endif
