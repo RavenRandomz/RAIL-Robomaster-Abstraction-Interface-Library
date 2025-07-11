@@ -2,6 +2,7 @@
 #define RAIL_MOTORS_I_SPEED_WHEEL_H
 #include "irim_speed_control.hpp"
 #include "ispeed_control.hpp"
+#include "rail/systems/isystem.hpp"
 
 namespace rail::motors
 {
@@ -9,7 +10,10 @@ namespace rail::motors
 	 * This is useful for precise control of chassis wheels and ammo booster flywheels.
 	 */
 	template <typename SpeedData, typename AngularSpeedData>
-	class ISpeedWheel : virtual public IRimSpeedControl<SpeedData>, virtual public ISpeedControl<AngularSpeedData>
+	class ISpeedWheel:
+		virtual public IRimSpeedControl<SpeedData>,
+		virtual public ISpeedControl<AngularSpeedData>,
+		virtual public systems::ISystem
 	{
 	public:
 		virtual ~ISpeedWheel() = default;
