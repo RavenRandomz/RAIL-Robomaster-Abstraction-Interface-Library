@@ -1,7 +1,7 @@
 #ifndef RAIL_MOTORS_I_RIM_SPEED_CONTROL_HPP
 #define RAIL_MOTORS_I_RIM_SPEED_CONTROL_HPP
 
-namespace rail::motors
+namespace rail::motor
 {
 	/**
 	 * This allows the client to control a motor which is attached to a wheel.

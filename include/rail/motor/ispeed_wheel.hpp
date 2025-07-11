@@ -4,7 +4,7 @@
 #include "ispeed_control.hpp"
 #include "rail/systems/isystem.hpp"
 
-namespace rail::motors
+namespace rail::motor
 {
 	/**
 	 * This is useful for precise control of chassis wheels and ammo booster flywheels.

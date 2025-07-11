@@ -2,7 +2,7 @@
 #define RAIL_MOTORS_I_POSITION_MOTOR_H
 #include "iposition_control.hpp"
 #include "rail/systems/isystem.hpp"
-namespace rail::motors
+namespace rail::motor
 {
 	/**
 	 * Interface for a general motor that can be controlled via a target position.

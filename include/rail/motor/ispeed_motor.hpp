@@ -3,7 +3,7 @@
 #include "ispeed_control.hpp"
 #include "rail/systems/isystem.hpp"
 
-namespace rail::motors
+namespace rail::motor
 {
 	template <typename SpeedData>
 	class ISpeedMotor : virtual public ISpeedControl<SpeedData>, virtual public systems::ISystem
