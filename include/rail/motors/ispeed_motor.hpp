@@ -6,7 +6,7 @@
 namespace rail::motors
 {
 	template <typename SpeedData>
-	class ISpeedMotor : public ISpeedControl<SpeedData>, public systems::ISystem
+	class ISpeedMotor : virtual public ISpeedControl<SpeedData>, virtual public systems::ISystem
 	{
 	public:
 		virtual ~ISpeedMotor() = default;
