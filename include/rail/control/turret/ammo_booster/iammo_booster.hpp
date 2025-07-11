@@ -5,7 +5,7 @@
 
 namespace rail::control::turret
 {
-    class IAmmoBooster : virtual public IAmmoBoosterControl, virtual public systems::ISystem
+    class IAmmoBooster : virtual public IAmmoBoosterControl, virtual public system::ISystem
     {
         virtual ~IAmmoBooster() = default;
     };

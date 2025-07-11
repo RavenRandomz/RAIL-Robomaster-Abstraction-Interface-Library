@@ -13,7 +13,7 @@ namespace rail::motor
 	 * use motors::IPositionControl.
 	 */
 	template <typename PositionData>
-	class IPositionMotor : virtual public IPositionControl<PositionData>, virtual public systems::ISystem
+	class IPositionMotor : virtual public IPositionControl<PositionData>, virtual public system::ISystem
 	{
 	public:
 		virtual ~IPositionMotor() = default;

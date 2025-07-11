@@ -8,7 +8,7 @@ namespace rail::control::turret
      * Global, coordinate based controls for the gimbal
      */
     template <class AngularPosition>
-    class IFieldGimbal : virtual public IFieldGimbalControl<AngularPosition>, virtual public systems::ISystem
+    class IFieldGimbal : virtual public IFieldGimbalControl<AngularPosition>, virtual public system::ISystem
     {
         virtual ~IFieldGimbal() = default;
     };

@@ -1,6 +1,6 @@
 #ifndef RAIL_SYSTEMS_SYSTEM_HPP
 #define RAIL_SYSTEMS_SYSTEM_HPP
-namespace rail::systems
+namespace rail::system
 {
     /**
      * A system is a component that needs to be initialized and updated.

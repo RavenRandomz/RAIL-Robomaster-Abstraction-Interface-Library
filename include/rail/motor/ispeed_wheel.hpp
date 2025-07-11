@@ -13,7 +13,7 @@ namespace rail::motor
 	class ISpeedWheel:
 		virtual public IRimSpeedControl<SpeedData>,
 		virtual public ISpeedControl<AngularSpeedData>,
-		virtual public systems::ISystem
+		virtual public system::ISystem
 	{
 	public:
 		virtual ~ISpeedWheel() = default;
