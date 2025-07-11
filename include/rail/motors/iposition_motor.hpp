@@ -1,6 +1,7 @@
 #ifndef RAIL_MOTORS_I_POSITION_MOTOR_H
 #define RAIL_MOTORS_I_POSITION_MOTOR_H
 #include "iposition_control.hpp"
+#include "rail/systems/isystem.hpp"
 namespace rail::motors
 {
 	/**
@@ -12,7 +13,7 @@ namespace rail::motors
 	 * use motors::IPositionControl.
 	 */
 	template <typename PositionData>
-	class IPositionMotor : virtual public IPositionControl<PositionData>
+	class IPositionMotor : virtual public IPositionControl<PositionData>, virtual public systems::ISystem
 	{
 	public:
 		virtual ~IPositionMotor() = default;
