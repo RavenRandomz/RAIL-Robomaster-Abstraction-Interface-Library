@@ -17,6 +17,7 @@ namespace rail::chassis
         virtual public IHolonomicControl<Velocity, AngularVelocity>,
         virtual public ISystem
     {
+        virtual ~IHolonomicDrive() = default;
     };
 }
 #endif
