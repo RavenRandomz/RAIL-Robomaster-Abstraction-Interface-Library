@@ -1,6 +1,7 @@
 #ifndef RAIL_CONTROL_CHASSIS_I_HOLONOMIC_DRIVE_HPP
 #define RAIL_CONTROL_CHASSIS_I_HOLONOMIC_DRIVE_HPP
 #include "iholonomic_control.hpp"
+#include "rail/system/isystem.hpp"
 namespace rail::chassis
 {
     /**
@@ -12,7 +13,9 @@ namespace rail::chassis
      * x and y.
      */
     template <class Velocity, class AngularVelocity>
-    class IHolonomicDrive : virtual public IHolonomicControl<Velocity, AngularVelocity>
+    class IHolonomicDrive:
+        virtual public IHolonomicControl<Velocity, AngularVelocity>,
+        virtual public ISystem
     {
     };
 }
