@@ -1,6 +1,8 @@
 #ifndef RAIL_CONTROL_CHASSIS_I_HOLONOMIC_DRIVE_HPP
 #define RAIL_CONTROL_CHASSIS_I_HOLONOMIC_DRIVE_HPP
-namespace rail::control::chassis
+#include "iholonomic_control.hpp"
+#include "rail/system/isystem.hpp"
+namespace rail::chassis
 {
     /**
      * A Holonomic Drive is essentially any 2d drive that can translate
@@ -11,13 +13,11 @@ namespace rail::control::chassis
      * x and y.
      */
     template <class Velocity, class AngularVelocity>
-    class IHolonomicDrive
+    class IHolonomicDrive:
+        virtual public IHolonomicControl<Velocity, AngularVelocity>,
+        virtual public ISystem
     {
-        virtual void setTargetTranslation(const Velocity& velocity) = 0;
-        virtual void setTargetRotation(const AngularVelocity& rotation) = 0;
-
-        virtual Velocity getTargetTranslation() = 0;
-        virtual AngularVelocity getTargetRotation() = 0;
+        virtual ~IHolonomicDrive() = default;
     };
 }
 #endif
