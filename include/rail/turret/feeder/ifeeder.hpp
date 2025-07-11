@@ -2,7 +2,7 @@
 #define RAIL_CONTROL_TURRET_I_FEEDER_HPP
 #include "ifeeder_control.hpp"
 #include "rail/system/isystem.hpp"
-namespace rail::control::turret
+namespace rail::turret
 {
     /**
      * Owning class for general feeders

@@ -3,7 +3,7 @@
 #include "iammo_booster_control.hpp"
 #include "rail/system/isystem.hpp"
 
-namespace rail::control::turret
+namespace rail::turret
 {
     class IAmmoBooster : virtual public IAmmoBoosterControl, virtual public system::ISystem
     {

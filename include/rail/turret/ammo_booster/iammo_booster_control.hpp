@@ -1,6 +1,6 @@
 #ifndef RAIL_CONTROL_TURRET_I_AMMO_BOOSTER_CONTROL_HPP
 #define RAIL_CONTROL_TURRET_I_AMMO_BOOSTER_CONTROL_HPP
-namespace rail::control::turret
+namespace rail::turret
 {
     /**
      * Can be used for a command to control an ammo booster

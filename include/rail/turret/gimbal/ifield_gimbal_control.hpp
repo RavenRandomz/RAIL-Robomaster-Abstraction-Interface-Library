@@ -2,7 +2,7 @@
 #define RAIL_CONTROL_TURRET_I_FIELD_GIMBAL_CONTROL_HPP
 #include "ifield_pitch_control.hpp"
 #include "ifield_yaw_control.hpp"
-namespace rail::control::turret
+namespace rail::turret
 {
     /**
      * Global, coordinate based controls for the gimbal

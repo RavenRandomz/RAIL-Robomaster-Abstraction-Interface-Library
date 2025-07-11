@@ -2,7 +2,7 @@
 #define RAIL_CONTROL_TURRET_I_FIELD_GIMBAL_HPP
 #include "ifield_gimbal_control.hpp"
 #include "rail/system/isystem.hpp"
-namespace rail::control::turret
+namespace rail::turret
 {
     /**
      * Global, coordinate based controls for the gimbal

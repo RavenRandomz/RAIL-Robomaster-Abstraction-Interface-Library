@@ -1,6 +1,6 @@
 #ifndef RAIL_CONTROL_TURRET_I_FEEDER_CONTROL_HPP
 #define RAIL_CONTROL_TURRET_I_FEEDER_CONTROL_HPP
-namespace rail::control::turret
+namespace rail::turret
 {
     /**
      * Feeder/agitator interface. Allows external manual unjamming as well.
