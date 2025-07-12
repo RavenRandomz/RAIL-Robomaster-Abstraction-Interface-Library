@@ -1,7 +1,5 @@
-#ifndef RAIL_CHASSIS_I_CHASSIS_INPUT_HPP
-#define RAIL_CHASSIS_I_CHASSIS_INPUT_HPP
-#include "ichassis_input_reader.hpp"
-
+#ifndef RAIL_CHASSIS_I_CHASSIS_INPUT_READER_HPP
+#define RAIL_CHASSIS_I_CHASSIS_INPUT_READER_HPP
 namespace rail::chassis
 {
     /**
@@ -13,10 +11,11 @@ namespace rail::chassis
      * This is a non-owning interface
      */
     template <typename Translation, typename Rotation>
-    class IChassisInput : virtual public IChassisInputReader<Translation, Rotation>
+    class IChassisInputReader
     {
     public:
-        ~IChassisInput() {};
+        virtual Translation getTranslation() const = 0;
+        virtual Rotation getRotation() const = 0;
     };
 }
 #endif
