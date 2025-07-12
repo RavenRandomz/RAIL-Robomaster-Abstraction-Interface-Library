@@ -11,12 +11,10 @@ namespace rail::control::chassis
      * This is particularly useful for the 3 main holonomic drives: omni, mecnaum, and swerve
      */
 
-    template<class SpeedData>
+    template<class WheelSpeeds>
     class IQuadDriveMock : virtual public IQuadDrive<SpeedData>
     {
     public:
-        using WheelSpeeds = IQuadDrive<SpeedData>::WheelSpeeds;
-
         MOCK_METHOD(void, setTargetWheelSpeeds, (const WheelSpeeds& wheelSpeeds), (override));
         MOCK_METHOD(WheelSpeeds, getTargetWheelSpeeds, (), (const, override));
     };

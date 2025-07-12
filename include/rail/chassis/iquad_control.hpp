@@ -9,12 +9,10 @@ namespace rail::chassis
      * to directly manage a quad drive; however, for those who are not of the faint-hearted,
      * this allows such
      */
-    template<class SpeedData>
+    template<class WheelSpeeds>
     class IQuadControl
     {
     public:
-        using WheelSpeeds = QuadDriveData<SpeedData>;
-
         virtual void setTargetWheelSpeeds(const WheelSpeeds& wheelSpeeds) = 0;
         virtual WheelSpeeds getTargetWheelSpeeds() const = 0;
     };
