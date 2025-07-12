@@ -14,6 +14,7 @@ namespace rail::control::chassis
     template <class Velocity, class AngularVelocity>
     class IHolonomicControlMock : public IHolonomicControl<Velocity, AngularVelocity>
     {
+    public:
         MOCK_METHOD(void, setTargetTranslation, (const Velocity& velocity), (override));
         MOCK_METHOD(void, setTargetRotation, (const AngularVelocity& rotation), (override));
 

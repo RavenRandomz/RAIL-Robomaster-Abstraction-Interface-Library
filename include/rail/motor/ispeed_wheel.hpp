@@ -16,7 +16,7 @@ namespace rail::motor
 		virtual public system::ISystem
 	{
 	public:
-		virtual ~ISpeedWheel() = default;
+		virtual ~ISpeedWheel() {};
 	};
 }
 #endif

@@ -18,7 +18,6 @@ namespace rail::chassis
         virtual public IHolonomicControlMock<Velocity, AngularVelocity>,
         virtual public ISystemMock
     {
-        virtual ~IHolonomicDrive() = default;
     };
 }
 #endif

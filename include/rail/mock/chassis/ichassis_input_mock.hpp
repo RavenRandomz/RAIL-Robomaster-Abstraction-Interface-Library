@@ -14,6 +14,7 @@ namespace rail::chassis
     template <typename Translation, typename Rotation>
     class IChassisInputMock
     {
+    public:
         MOCK_METHOD(Translation, getTranslation, (), (const, override)); 
         MOCK_METHOD(Rotation, getRotation, (), (const, override));
     };

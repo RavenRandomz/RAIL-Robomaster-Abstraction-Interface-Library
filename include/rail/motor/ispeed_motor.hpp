@@ -9,7 +9,7 @@ namespace rail::motor
 	class ISpeedMotor : virtual public ISpeedControl<SpeedData>, virtual public system::ISystem
 	{
 	public:
-		virtual ~ISpeedMotor() = default;
+		virtual ~ISpeedMotor() {};
 	};
 }
 #endif

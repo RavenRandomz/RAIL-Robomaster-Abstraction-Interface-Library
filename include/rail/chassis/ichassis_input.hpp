@@ -11,8 +11,11 @@ namespace rail::chassis
     template <typename Translation, typename Rotation>
     class IChassisInput
     {
+    public:
         virtual Translation getTranslation() const = 0;
         virtual Rotation getRotation() const = 0;
+    protected:
+        ~IChassisInput() {};
 
     };
 }

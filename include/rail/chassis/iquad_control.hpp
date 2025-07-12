@@ -12,6 +12,7 @@ namespace rail::chassis
     template<class SpeedData>
     class IQuadControl
     {
+    public:
         using WheelSpeeds = QuadDriveData<SpeedData>;
 
         virtual void setTargetWheelSpeeds(const WheelSpeeds& wheelSpeeds) = 0;

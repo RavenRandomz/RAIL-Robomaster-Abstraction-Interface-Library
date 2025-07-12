@@ -14,8 +14,9 @@ namespace rail::chassis
         virtual public IQuadControl<SpeedData>,
         virtual public system::ISystem
     {
+    public:
         using WheelSpeeds = IQuadControl<SpeedData>::WheelSpeeds;
-        virtual ~IQuadDrive() = 0;
+        virtual ~IQuadDrive() {};
     };
 }
 #endif

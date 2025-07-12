@@ -11,6 +11,7 @@ namespace rail::chassis
     template <class Velocity, class AngularVelocity>
     class IHolonomicControl
     {
+    public:
         virtual void setTargetTranslation(const Velocity& velocity) = 0;
         virtual void setTargetRotation(const AngularVelocity& rotation) = 0;
 

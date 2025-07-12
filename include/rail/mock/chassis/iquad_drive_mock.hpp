@@ -14,6 +14,7 @@ namespace rail::control::chassis
     template<class SpeedData>
     class IQuadDriveMock : virtual public IQuadDrive<SpeedData>
     {
+    public:
         using WheelSpeeds = IQuadDrive<SpeedData>::WheelSpeeds;
 
         MOCK_METHOD(void, setTargetWheelSpeeds, (const WheelSpeeds& wheelSpeeds), (override));

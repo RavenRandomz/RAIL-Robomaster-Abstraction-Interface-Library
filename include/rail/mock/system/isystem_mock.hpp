@@ -18,10 +18,9 @@ namespace rail::system
      */
     class ISystemMock : virtual public ISystem
     {
+    public:
         MOCK_METHOD(void, initialize, (), (override));
         MOCK_METHOD(void, update, (), (override));
-
-        virtual ~ISystemMock() = default;
     };
 }
 #endif
