@@ -7,7 +7,8 @@ namespace rail::turret
     /**
      * Owning class for general feeders
      */
-    class IFeeder : virtual public IFeederControl, virtual public system::ISystem
+    template <typename FireRate>
+    class IFeeder : virtual public IFeederControl<FireRate>, virtual public system::ISystem
     {
         virtual ~IFeeder() = default;
     };
