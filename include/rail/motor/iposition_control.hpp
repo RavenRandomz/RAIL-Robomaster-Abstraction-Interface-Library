@@ -10,7 +10,7 @@ namespace rail::motor
 	class IPositionControl
 	{
 	public:
-		virtual void setTargetPosition(const PositionData& speed) = 0;
+		virtual void setTargetPosition(const PositionData& position) = 0;
 		virtual PositionData getTargetPosition() const = 0;
 		
 		//There is no virtual destructor because this is only meant to access the instance
