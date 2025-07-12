@@ -8,12 +8,11 @@ namespace rail::turret
      * reverse the motor).
      * 
      */
+    template <typename FireRate>
     class IFeederControl
     {
-        virtual void feedOn() = 0;    
-        virtual void feedOff() = 0;
-        virtual void unjamOn() = 0;
-        virtual void unjamOff() = 0;
+        virtual void setTargetFireRate(const FireRate& fireRate) = 0;
+        virtual FireRate getTargetFireRate() const = 0;
     };
 }
 #endif
