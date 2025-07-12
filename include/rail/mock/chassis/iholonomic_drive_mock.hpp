@@ -14,7 +14,7 @@ namespace rail::chassis
      * x and y.
      */
     template <class Velocity, class AngularVelocity>
-    class IHolonomicDrive:
+    class IHolonomicDriveMock:
         virtual public IHolonomicDrive<Velocity, AngularVelocity>
         virtual public IHolonomicControlMock<Velocity, AngularVelocity>,
         virtual public ISystemMock
