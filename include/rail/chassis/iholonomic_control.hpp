@@ -13,6 +13,9 @@ namespace rail::chassis
     {
         virtual void setTargetTranslation(const Velocity& velocity) = 0;
         virtual void setTargetRotation(const AngularVelocity& rotation) = 0;
+
+        virtual Velocity getTargetTranslation() const = 0;
+        virtual AngularVelocity getTargetRotation() const = 0;
     };
 }
 #endif
