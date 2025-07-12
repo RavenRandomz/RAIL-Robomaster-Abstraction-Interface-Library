@@ -1,6 +1,6 @@
 #ifndef RAIL_CONTROL_CHASSIS_I_QUAD_DRIVE_MOCK_HPP
 #define RAIL_CONTROL_CHASSIS_I_QUAD_DRIVE_MOCK_HPP
-#include "rail/control/chassis/iquad_drive.hpp"
+#include "rail/chassis/iquad_drive.hpp"
 
 #include <gmock/gmock.h>
 

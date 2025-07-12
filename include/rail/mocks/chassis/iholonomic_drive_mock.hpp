@@ -1,6 +1,6 @@
 #ifndef RAIL_CONTROL_CHASSIS_I_HOLONOMIC_DRIVE_MOCK_HPP
 #define RAIL_CONTROL_CHASSIS_I_HOLONOMIC_DRIVE_MOCK_HPP
-#include "rail/control/chassis/iholonomic_drive.hpp"
+#include "rail/chassis/iholonomic_drive.hpp"
 namespace rail::control::chassis
 {
     /**
