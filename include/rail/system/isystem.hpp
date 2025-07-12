@@ -15,6 +15,7 @@ namespace rail::system
      */
     class ISystem
     {
+    public:
         virtual void initialize() = 0;
         virtual void update() = 0;
 
