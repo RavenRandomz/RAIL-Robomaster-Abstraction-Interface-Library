@@ -10,7 +10,7 @@ namespace rail::motor
 	 * client will be responsible for calling update() and initialize().
 	 * 
 	 * For non-owning users who are not expected to call update() reguarily, please
-	 * use motors::IPositionControl.
+	 * use motor::IPositionControl.
 	 */
 	template <typename PositionData>
 	class IPositionMotor :  virtual public IPositionControl<PositionData>, virtual public system::ISystem
