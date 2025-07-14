@@ -12,6 +12,8 @@ namespace rail::turret
         virtual public IFieldPitchControl<AngularPosition>,
         virtual public IFieldYawControl<AngularPosition>
     {
+    public:
+        virtual ~IFieldGimbalControl() {};
     };
 }
 #endif

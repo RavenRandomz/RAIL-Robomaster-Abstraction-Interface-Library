@@ -24,6 +24,8 @@ namespace rail::turret
     public:
         virtual void boostOn() = 0;
         virtual void boostOff() = 0;
+    
+        virtual ~ISimpleAmmoBoosterControl() {};
     };
 };
 #endif

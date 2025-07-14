@@ -17,6 +17,8 @@ namespace rail::chassis
 
         virtual Velocity getTargetTranslation() const = 0;
         virtual AngularVelocity getTargetRotation() const = 0;
+
+        virtual ~IHolonomicControl() {};
     };
 }
 #endif

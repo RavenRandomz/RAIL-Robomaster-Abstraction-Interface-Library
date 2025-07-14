@@ -16,6 +16,7 @@ namespace rail::chassis
     public:
         virtual Translation getTranslation() const = 0;
         virtual Rotation getRotation() const = 0;
+        virtual ~IChassisInputReader() {};
     };
 }
 #endif

@@ -11,6 +11,8 @@ namespace rail::turret
     public:
         virtual void setTargetBoostVelocity(const &Velocity velocity) = 0;
         virtual Velocity getTargetBoostVelocity() const = 0;
+
+        virtual ~IAmmoBoosterControl() {};
     };
 };
 #endif

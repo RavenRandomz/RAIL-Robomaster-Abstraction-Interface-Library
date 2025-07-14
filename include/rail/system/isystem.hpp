@@ -19,7 +19,7 @@ namespace rail::system
         virtual void initialize() = 0;
         virtual void update() = 0;
 
-        //ISystem is non-owning, therefore no virtual destructor
+        virtual ~ISystem() {};
     };
 }
 #endif

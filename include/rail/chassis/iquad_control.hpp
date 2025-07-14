@@ -15,6 +15,8 @@ namespace rail::chassis
     public:
         virtual void setTargetWheelSpeeds(const WheelSpeeds& wheelSpeeds) = 0;
         virtual WheelSpeeds getTargetWheelSpeeds() const = 0;
+
+        virtual ~IQuadControl() {};
     };
 }
 #endif

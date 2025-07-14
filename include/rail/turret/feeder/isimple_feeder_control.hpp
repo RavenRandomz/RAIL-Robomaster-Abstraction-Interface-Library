@@ -19,6 +19,8 @@ namespace rail::turret
         virtual void feedOff() = 0;
         virtual void unjamOn() = 0;
         virtual void unjamOff() = 0;
+
+        virtual ~ISimpleFeederControl() {};
     };
 }
 #endif
