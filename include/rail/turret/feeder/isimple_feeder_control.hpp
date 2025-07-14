@@ -14,6 +14,7 @@ namespace rail::turret
      */
     class ISimpleFeederControl
     {
+    public:
         virtual void feedOn() = 0;    
         virtual void feedOff() = 0;
         virtual void unjamOn() = 0;

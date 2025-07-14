@@ -11,6 +11,7 @@ namespace rail::turret
     template <typename Velocity>
     class IAmmoBooster : virtual public IAmmoBoosterControl<Velocity>, virtual public system::ISystem
     {
+    public:
         virtual ~IAmmoBooster() = default;
     };
 };

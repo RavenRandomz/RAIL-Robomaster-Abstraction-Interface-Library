@@ -10,7 +10,8 @@ namespace rail::turret
     template <typename FireRate>
     class IFeeder : virtual public IFeederControl<FireRate>, virtual public system::ISystem
     {
-        virtual ~IFeeder() = default;
+    public:
+        virtual ~IFeeder() {};
     };
 }
 #endif

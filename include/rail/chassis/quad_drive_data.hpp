@@ -9,7 +9,7 @@ namespace rail::chassis
 	 *  This is a template in order to support the use of units libraries or primitive types
 	 */
 	template <typename Data>
-	class QuadDriveData
+	struct QuadDriveData
 	{
 		Data frontLeft;
 		Data frontRight;

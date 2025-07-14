@@ -9,7 +9,8 @@ namespace rail::turret
      */
     class ISimpleFeeder : virtual public ISimpleFeederControl, virtual public system::ISystem
     {
-        virtual ~ISimpleFeeder() = default;
+    public:
+        virtual ~ISimpleFeeder() {};
     };
 }
 #endif

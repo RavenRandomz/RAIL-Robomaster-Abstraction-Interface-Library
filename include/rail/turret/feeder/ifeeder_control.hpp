@@ -11,6 +11,7 @@ namespace rail::turret
     template <typename FireRate>
     class IFeederControl
     {
+    public:
         virtual void setTargetFireRate(const FireRate& fireRate) = 0;
         virtual FireRate getTargetFireRate() const = 0;
     };

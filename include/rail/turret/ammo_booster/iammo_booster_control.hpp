@@ -8,6 +8,7 @@ namespace rail::turret
     template <typename Velocity>
     class IAmmoBoosterControl
     {
+    public:
         virtual void setTargetBoostVelocity(const &Velocity velocity) = 0;
         virtual Velocity getTargetBoostVelocity() const = 0;
     };

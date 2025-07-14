@@ -8,6 +8,7 @@ namespace rail::turret
     template <class AngularPosition>
     class IFieldPitchControl
     {
+    public:
         virtual void setTargetFieldPitch(const AngularPosition& pitch) = 0;
         virtual AngularPosition getTargetFieldPitch() const = 0;
     };

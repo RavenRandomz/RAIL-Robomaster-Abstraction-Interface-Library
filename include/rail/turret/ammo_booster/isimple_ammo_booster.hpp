@@ -22,7 +22,8 @@ namespace rail::turret
      */
     class ISimpleAmmoBooster : virtual public ISimpleAmmoBoosterControl, virtual public system::ISystem
     {
-        virtual ~ISimpleAmmoBooster() = default;
+    public:
+        virtual ~ISimpleAmmoBooster() {};
     };
 };
 #endif
