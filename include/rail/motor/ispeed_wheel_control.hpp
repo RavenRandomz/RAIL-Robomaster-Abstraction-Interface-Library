@@ -11,8 +11,8 @@ namespace rail::motor
 	class ISpeedWheelControl
 	{
 	public:
-		virtual void setRimSpeed(const SpeedData& rimSpeed) = 0;
-		virtual SpeedData getRimSpeed() const = 0;
+		virtual void setTargetRimSpeed(const SpeedData& rimSpeed) = 0;
+		virtual SpeedData getTargetRimSpeed() const = 0;
 
 		virtual ~ISpeedWheelControl() {};
 	};
