@@ -9,10 +9,9 @@ namespace rail::motor
 	/**
 	 * This is useful for precise control of chassis wheels and ammo booster flywheels.
 	 */
-	template <typename SpeedData, typename AngularSpeedData>
+	template <typename AngularSpeedData>
 	class ISpeedWheel:
 		virtual public ISpeedWheelControl<SpeedData>,
-		virtual public ISpeedControl<AngularSpeedData>,
 		virtual public system::ISystem
 	{
 	public:
