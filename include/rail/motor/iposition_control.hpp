@@ -11,7 +11,6 @@ namespace rail::motor
 	{
 	public:
 		virtual void setTargetPosition(const PositionData& position) = 0;
-		virtual PositionData getTargetPosition() const = 0;
 
 		virtual ~IPositionControl() {};
 	};
