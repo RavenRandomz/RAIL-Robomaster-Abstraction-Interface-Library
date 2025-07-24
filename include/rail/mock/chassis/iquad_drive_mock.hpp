@@ -16,7 +16,6 @@ namespace rail::control::chassis
     {
     public:
         MOCK_METHOD(void, setTargetWheelSpeeds, (const WheelSpeeds& wheelSpeeds), (override));
-        MOCK_METHOD(WheelSpeeds, getTargetWheelSpeeds, (), (const, override));
     };
 }
 #endif

@@ -17,9 +17,6 @@ namespace rail::control::chassis
     public:
         MOCK_METHOD(void, setTargetTranslation, (const Velocity& velocity), (override));
         MOCK_METHOD(void, setTargetRotation, (const AngularVelocity& rotation), (override));
-
-        MOCK_METHOD(Velocity, getTargetTranslation, (), (const, override));
-        MOCK_METHOD(AngularVelocity, getTargetRotation, (), (const, override));
     };
 }
 #endif

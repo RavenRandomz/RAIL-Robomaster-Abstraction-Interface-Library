@@ -10,7 +10,6 @@ namespace rail::motor
 	{
 	public:
 		MOCK_METHOD(void, setTargetSpeed, (const SpeedData& speed), (override));
-		MOCK_METHOD(SpeedData, getTargetSpeed, (), (const, override));
 	};
 }
 #endif
