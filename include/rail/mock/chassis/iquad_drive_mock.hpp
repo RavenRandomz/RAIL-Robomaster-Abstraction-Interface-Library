@@ -4,15 +4,15 @@
 
 #include <gmock/gmock.h>
 
-namespace rail::control::chassis
+namespace rail::chassis
 {
     /**
      * Provides a uniform means of controlling 4 motors in a quad orientation.
      * This is particularly useful for the 3 main holonomic drives: omni, mecnaum, and swerve
      */
 
-    template<class WheelSpeeds>
-    class IQuadDriveMock : virtual public IQuadDrive<SpeedData>
+    template<typename WheelSpeeds>
+    class IQuadDriveMock : virtual public IQuadDrive<WheelSpeeds>
     {
     public:
         MOCK_METHOD(void, setTargetWheelSpeeds, (const WheelSpeeds& wheelSpeeds), (override));
