@@ -5,6 +5,7 @@
 namespace rail::chassis
 {
     class IPowerLimiterSystemMock:
+        virtual public IPowerLimiterSystem,
         virtual public IPowerLimiterMock,
         virtual public system::ISystemMock
     {
