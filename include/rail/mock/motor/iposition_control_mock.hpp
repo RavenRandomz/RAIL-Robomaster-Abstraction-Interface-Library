@@ -7,7 +7,7 @@ namespace rail::motor
         virtual public IPositionControl<AngularPosition>
     {
     public:
-		MOCK_METHOD(void, setTargetPosition, (const PositionData& position), (override));
+		MOCK_METHOD(void, setTargetPosition, (const AngularPosition& position), (override));
         virtual ~IPositionControlMock() {};
     };
 

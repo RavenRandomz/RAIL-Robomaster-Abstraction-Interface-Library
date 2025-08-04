@@ -9,8 +9,8 @@ namespace rail::motor
     template <typename AngularPosition>
     class IPositionMotorMock:
         virtual public IPositionMotor<AngularPosition>,
-        virtual public IPositionControlMock<AngularPosition>
-        virtual public system::ISystemMock,
+        virtual public IPositionControlMock<AngularPosition>,
+        virtual public system::ISystemMock
     {
     public:
         virtual ~IPositionMotorMock() {};
