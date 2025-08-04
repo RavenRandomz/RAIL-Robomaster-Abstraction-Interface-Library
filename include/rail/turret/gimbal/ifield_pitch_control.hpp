@@ -10,7 +10,6 @@ namespace rail::turret
     {
     public:
         virtual void setTargetFieldPitch(const AngularPosition& pitch) = 0;
-        virtual AngularPosition getTargetFieldPitch() const = 0;
 
         virtual ~IFieldPitchControl() {};
     };
