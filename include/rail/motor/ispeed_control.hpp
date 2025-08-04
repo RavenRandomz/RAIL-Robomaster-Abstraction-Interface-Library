@@ -7,7 +7,6 @@ namespace rail::motor
 	{
 	public:
 		virtual void setTargetSpeed(const SpeedData& speed) = 0;
-		virtual SpeedData getTargetSpeed() const = 0;
 
 		virtual ~ISpeedControl() {};
 	};

@@ -15,7 +15,7 @@ namespace rail::chassis
     template <class Velocity, class AngularVelocity>
     class IHolonomicDrive:
         virtual public IHolonomicControl<Velocity, AngularVelocity>,
-        virtual public ISystem
+        virtual public system::ISystem
     {
     public:
         virtual ~IHolonomicDrive() {};

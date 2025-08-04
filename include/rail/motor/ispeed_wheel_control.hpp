@@ -12,7 +12,6 @@ namespace rail::motor
 	{
 	public:
 		virtual void setTargetRimSpeed(const SpeedData& rimSpeed) = 0;
-		virtual SpeedData getTargetRimSpeed() const = 0;
 
 		virtual ~ISpeedWheelControl() {};
 	};
