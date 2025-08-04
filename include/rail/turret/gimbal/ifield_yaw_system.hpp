@@ -15,6 +15,7 @@ namespace rail::turret
         virtual public IFieldYawControl<AngularPosition>,
         virtual public system::ISystem
     {
+    public:
         virtual ~IFieldYawSystem() {};
     };
 }
