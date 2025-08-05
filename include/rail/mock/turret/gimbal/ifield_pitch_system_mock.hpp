@@ -18,6 +18,7 @@ namespace rail::turret
         virtual public IFieldPitchControlMock<AngularPosition>,
         virtual public system::ISystemMock
     {
+    public:
         virtual ~IFieldPitchSystemMock() {};
     };
 }
