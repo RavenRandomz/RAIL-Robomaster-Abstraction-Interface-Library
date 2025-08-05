@@ -1,6 +1,9 @@
 #pragma once
+
+#include "rail/turret/gimbal/ifield_pitch_system.hpp"
 #include "ifield_pitch_control_mock.hpp"
 #include "rail/mock/system/isystem_mock.hpp"
+
 namespace rail::turret
 {
     /**
@@ -11,6 +14,7 @@ namespace rail::turret
      */
     template <typename AngularPosition>
     class IFieldPitchSystemMock:
+        virtual public IFieldPitchSystem<AngularPosition>,
         virtual public IFieldPitchControlMock<AngularPosition>,
         virtual public system::ISystemMock
     {
