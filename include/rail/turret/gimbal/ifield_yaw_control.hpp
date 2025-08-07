@@ -10,7 +10,6 @@ namespace rail::turret
     {
     public:
         virtual void setTargetFieldYaw(const AngularPosition& yaw) = 0;
-        virtual AngularPosition getTargetFieldYaw() const = 0;
 
         virtual ~IFieldYawControl() {};
     };

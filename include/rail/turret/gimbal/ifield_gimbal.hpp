@@ -10,7 +10,7 @@ namespace rail::turret
     template <class AngularPosition>
     class IFieldGimbal : virtual public IFieldGimbalControl<AngularPosition>, virtual public system::ISystem
     {
-    public
+    public:
         virtual ~IFieldGimbal() {};
     };
 }
