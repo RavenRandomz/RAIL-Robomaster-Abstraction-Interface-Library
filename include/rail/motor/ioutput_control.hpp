@@ -1,5 +1,5 @@
-#ifndef RAIL_MOTOR_I_OUTPUT_MOTOR_HPP
-#define RAIL_MOTOR_I_OUTPUT_MOTOR_HPP
+#ifndef RAIL_MOTOR_I_OUTPUT_CONTROL_HPP
+#define RAIL_MOTOR_I_OUTPUT_CONTROL_HPP
 namespace rail::motor
 {	
     /**
