@@ -7,7 +7,7 @@ namespace rail::telemetry
     class ITelemetry
     {
     public:
-        virtual DataType getData() const;
+        virtual DataType getData() const = 0;
         virtual ~ITelemetry() {};
     };
 }
