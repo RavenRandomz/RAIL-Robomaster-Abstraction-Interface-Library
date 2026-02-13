@@ -1,6 +1,6 @@
-#ifndef RAIL_MOCK_CHASSIS_I_CHASSIS_INPUT_READER_MOCK_HPP
-#define RAIL_MOCK_CHASSIS_I_CHASSIS_INPUT_READER_MOCK_HPP
-#include "rail/chassis/ichassis_input_reader.hpp"
+#ifndef RAIL_MOCK_CHASSIS_I_CHASSIS_INPUT_HANDLER_MOCK_HPP
+#define RAIL_MOCK_CHASSIS_I_CHASSIS_INPUT_HANDLER_MOCK_HPP
+#include "rail/chassis/ichassis_input_handler.hpp"
 #include <gmock/gmock.h>
 
 namespace rail::chassis
@@ -12,7 +12,7 @@ namespace rail::chassis
      * in order to have single responsibility
      */
     template <typename Translation, typename Rotation>
-    class IChassisInputReaderMock : public  IChassisInputReader<Translation, Rotation>
+    class IChassisInputHandlerMock : public  IChassisInputHandler<Translation, Rotation>
     {
     public:
         MOCK_METHOD(Translation, getTranslation, (), (const, override)); 
