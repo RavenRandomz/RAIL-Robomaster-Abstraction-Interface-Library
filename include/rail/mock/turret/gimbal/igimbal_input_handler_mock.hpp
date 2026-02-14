@@ -6,7 +6,7 @@
 namespace rail
 {
     template<typename Data>
-    class IGimbalInputHandlerMock : public ITurretInputHandler
+    class IGimbalInputHandlerMock : public IGimbalInputHandler
     {
     public:
         MOCK_METHOD(Data, getPitch, (), (const, override));

@@ -3,12 +3,12 @@
 namespace rail
 {
     template<typename Data>
-    class ITurretInputHandler
+    class IGimbalInputHandler
     {
     public:
         virtual Data getPitch() const = 0;
         virtual Data getYaw() const = 0;
-        virtual ~ITurretInputHandler () {}
+        virtual ~IGimbalInputHandler () {}
     };
 }
 #endif
