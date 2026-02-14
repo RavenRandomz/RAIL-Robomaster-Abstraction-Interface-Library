@@ -11,12 +11,12 @@ namespace rail::chassis
      * This is a non-owning interface
      */
     template <typename Translation, typename Rotation>
-    class IChassisInputHandler
+    class IHolonomicInputHandler
     {
     public:
         virtual Translation getTranslation() const = 0;
         virtual Rotation getRotation() const = 0;
-        virtual ~IChassisInputHandler() {};
+        virtual ~IHolonomicInputHandler() {};
     };
 }
 #endif
