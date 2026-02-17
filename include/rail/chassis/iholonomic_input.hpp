@@ -1,5 +1,5 @@
-#ifndef RAIL_CHASSIS_I_HOLONOMIC_INPUT_HANDLER_HPP
-#define RAIL_CHASSIS_I_HOLONOMIC_INPUT_HANDLER_HPP
+#ifndef RAIL_CHASSIS_I_HOLONOMIC_INPUT_HPP
+#define RAIL_CHASSIS_I_HOLONOMIC_INPUT_HPP
 namespace rail::chassis
 {
     /**
@@ -11,12 +11,12 @@ namespace rail::chassis
      * This is a non-owning interface
      */
     template <typename Translation, typename Rotation>
-    class IHolonomicInputHandler
+    class IHolonomicInput
     {
     public:
         virtual Translation getTranslation() const = 0;
         virtual Rotation getRotation() const = 0;
-        virtual ~IHolonomicInputHandler() {};
+        virtual ~IHolonomicInput() {};
     };
 }
 #endif

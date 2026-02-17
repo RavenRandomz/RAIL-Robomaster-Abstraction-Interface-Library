@@ -1,6 +1,6 @@
-#ifndef RAIL_MOCK_CHASSIS_I_HOLONOMIC_INPUT_HANDLER_MOCK_HPP
-#define RAIL_MOCK_CHASSIS_I_HOLONOMIC_INPUT_HANDLER_MOCK_HPP
-#include "rail/chassis/iholonomic_input_handler.hpp"
+#ifndef RAIL_MOCK_CHASSIS_I_HOLONOMIC_INPUT_MOCK_HPP
+#define RAIL_MOCK_CHASSIS_I_HOLONOMIC_INPUT_MOCK_HPP
+#include "rail/chassis/iholonomic_input.hpp"
 #include <gmock/gmock.h>
 
 namespace rail::chassis
@@ -12,7 +12,7 @@ namespace rail::chassis
      * in order to have single responsibility
      */
     template <typename Translation, typename Rotation>
-    class IHolonomicInputHandlerMock : public  IHolonomicInputHandler<Translation, Rotation>
+    class IHolonomicInputMock : public  IHolonomicInput<Translation, Rotation>
     {
     public:
         MOCK_METHOD(Translation, getTranslation, (), (const, override)); 
