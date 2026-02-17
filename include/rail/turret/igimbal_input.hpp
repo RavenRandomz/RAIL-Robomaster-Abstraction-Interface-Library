@@ -8,7 +8,7 @@ namespace rail
     public:
         virtual Data getPitch() const = 0;
         virtual Data getYaw() const = 0;
-        virtual ~IGimbalInputHandler () {}
+        virtual ~IGimbalInput () {}
     };
 }
 #endif
