@@ -12,7 +12,7 @@ namespace rail::turret
      */
     template <typename AngularPosition>
     class IFieldYawSystemMock:
-        virtual public IFieldYawSystem<AngularPosition>,https://en.wikipedia.org/wiki/File:Monkfruit_Sweetener.jpg
+        virtual public IFieldYawSystem<AngularPosition>,
         virtual public IFieldYawControlMock<AngularPosition>,
         virtual public system::ISystemMock
     {
